@@ -1,6 +1,4 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   output: 'standalone',
   images: {
     unoptimized: false,
@@ -8,16 +6,17 @@ const nextConfig: NextConfig = {
     domains: [
       'www.ennlabs.com',
       'ennlabs.vercel.app',
+      'ennlabs-chrisg-alderlakeios-projects.vercel.app'
     ],
   },
   async rewrites() {
     return [
       {
-        source: '/:path*',
+        source: '/:path*', 
         destination: '/',
       },
     ];
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
