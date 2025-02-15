@@ -3,6 +3,9 @@ import './globals.css';
 export const metadata = {
   title: 'EnnLabs',
   description: 'A venture studio focused on building a family of consumer products',
+  icons: {
+    icon: '/ennlabs.svg',
+  },
 };
 
 export default function RootLayout({
