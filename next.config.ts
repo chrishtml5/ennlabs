@@ -8,14 +8,13 @@ const nextConfig: NextConfig = {
     domains: [
       'www.ennlabs.com',
       'ennlabs.vercel.app',
-      'ennlabs-chrisg-alderlakeios-projects.vercel.app'
     ],
   },
   async rewrites() {
     return [
       {
-        source: '/old-route',
-        destination: '/new-route',
+        source: '/:path*',
+        destination: '/',
       },
     ];
   },
