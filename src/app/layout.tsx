@@ -5,12 +5,14 @@ export const metadata = {
   description: 'A venture studio focused on building a family of consumer products',
 };
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
-};
-
-export default RootLayout;
+}
