@@ -28,7 +28,7 @@ const HomePage = () => {
       )}
       <div className="relative z-10 flex flex-col items-center space-y-6 px-4">
         <Image 
-          src="/ennlabs.svg" 
+          src="/combined.svg" 
           alt="EnnLabs Logo" 
           width={250}
           height={75}
