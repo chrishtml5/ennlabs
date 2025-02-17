@@ -26,13 +26,13 @@ const HomePage = () => {
           <source src="/death.mp4" type="video/mp4" />
         </video>
       )}
-      <div className="relative z-10 space-y-6 px-4">
+      <div className="relative z-10 flex flex-col items-center space-y-6 px-4">
         <Image 
           src="/ennlabs.svg" 
           alt="EnnLabs Logo" 
-          width={162}
-          height={48}
-          className="h-auto w-28 sm:w-36 mx-auto transform hover:scale-105 transition-transform duration-300 select-none pointer-events-none"
+          width={250}
+          height={75}
+          className="h-auto w-28 sm:w-36 mx-auto hover-pop transition-transform duration-300 select-none pointer-events-none"
           priority
           draggable="false"
           onContextMenu={(e) => e.preventDefault()}
@@ -40,9 +40,17 @@ const HomePage = () => {
         <p className="text-xs sm:text-sm font-light tracking-widest uppercase text-white/60 animate-fade-in select-none">
           venture studio
         </p>
-        <h1 className="text-sm sm:text-base font-extralight text-white/80 max-w-[280px] mx-auto leading-relaxed select-none">
-          focused on building a family of consumer products
-        </h1>
+        <div className="relative z-10 flex flex-col items-center space-y-1 px-4">
+          <h1 className="text-sm sm:text-base font-extralight text-white/80 max-w-[280px] mx-auto leading-relaxed select-none transform translate-y-[-20%]">
+            focused on
+          </h1>
+          <h1 className="text-sm sm:text-base font-extralight text-white/80 max-w-[280px] mx-auto leading-relaxed select-none transform translate-y-[-10%]">
+            building a family
+          </h1>
+          <h1 className="text-sm sm:text-base font-extralight text-white/80 max-w-[280px] mx-auto leading-relaxed select-none">
+            of consumer products.
+          </h1>
+        </div>
       </div>
     </div>
   );
